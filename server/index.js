@@ -40,9 +40,10 @@ app.get('/', (req, res) => {
     res.send('APP IS RUNNING');
 });
 
-const CONNECTION_URL = 'mongodb+srv://dibyanshu47:jtxPaqpeIFE0MFy2@cluster0.5xhfxcj.mongodb.net/?retryWrites=true&w=majority';
+
+const CONNECTION_URL = 'mongodb+srv://dibyanshu47:Y6DIw4WI2RVapwoa@cluster0.gbvxlo7.mongodb.net/?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
+mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
     .catch((error) => console.log(error.message))

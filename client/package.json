@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "proxy": "http://localhost:5000",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -16,6 +16,7 @@
     "jwt-decode": "^3.1.2",
     "material-ui-chip-input": "^1.1.0",
     "moment": "^2.29.1",
+    "multiformats": "^9.9.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-file-base64": "^1.0.3",
